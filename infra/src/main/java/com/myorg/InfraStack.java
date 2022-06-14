@@ -72,7 +72,6 @@ public class InfraStack extends Stack {
                 .build());
 
         LambdaRestApi restApi = LambdaRestApi.Builder.create(this, "sample-api")
-                .restApiName("sample-api")
                 .handler(javaBasedFunction)
                 .deployOptions(
                         StageOptions.builder()
